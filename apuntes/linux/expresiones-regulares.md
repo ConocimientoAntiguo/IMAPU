@@ -46,7 +46,7 @@ Atención, la herramienta (grep y sus derivados, egrep, fgrep) no soporta los me
 
 | Nombre del comando | caracteres a buscar o expresión regular | Nombre del archivo donde se desea buscar |
 | ------------------ | --------------------------------------- | ---------------------------------------- |
-| gre \| egrep       | "GNU"                                   | archivo1                                 |
+|        egrep       | "GNU"                                   | archivo1                                 |
 
 
 
