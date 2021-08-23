@@ -103,9 +103,9 @@ Los runlevels o niveles de ejecución es un estado de ejecución en el que se pu
 * Runlevel 2 al 5: Arrancar en Modo Multiusuario con entorno gráfico si está instalado.
 * Runlevel 6: Reiniciar la máquina.
 
-Para indicar los procesos que se han de ejecutar o parar en cada runlevel, existen los directorios “/etc/rcX.d/”, donde X es el número de runlevel.
+Para indicar los procesos que se han de ejecutar o parar en cada runlevel, existen los directorios **/etc/rcX.d/**, donde X es el número de runlevel.
 
-Dentro de estos directorios, lo que hay son enlaces simbólicos a los scripts existentes en “/etc/init.d/”
+Dentro de estos directorios, lo que hay son enlaces simbólicos a los scripts existentes en **/etc/init.d/**.
 
 ### Cambiar el niveles de ejecución de forma temporal
 
