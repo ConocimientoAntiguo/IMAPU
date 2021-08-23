@@ -23,22 +23,22 @@ La mayoría de los lenguajes de programación soportan expresiones regulares.
 
 ## Caracteres especiales para expresiones regulares
 
-| Caracter especial | Significa o representa                                  |
-| ----------------- | ------------------------------------------------------- |
-| \t                | Tabulador.                                              |
-| \r                | Retorno de carro (también conocido como "enter").       |
-| \n                | Nueva línea.                                            |
-| \f                | Un salto de página.                                     |
-| \d                | Un dígito del 0 al 9.                                   |
-| \D                | Cualquier caracter que **NO** sea un dígito del 0 al 9. |
-| \w                | Cualquier caracter  alfanúmerico.                       |
-| \W                | Cualquier caracter que **NO** sea alfanúmerico.         |
-| \s                | Un espacio en blanco.                                   |
-| \S                | Cualquier caracter que **NO** sea un espacio en blanco. |
-| \A                | Inicio de cadena (No es un caracter sino una posición). |
-| \Z                | Final de cadena (No es un caracter sino una posición).  |
+| Caracter especial  | Significa o representa                                  |
+| -----------------  | ------------------------------------------------------- |
+| \ t                | Tabulador.                                              |
+| \ r                | Retorno de carro (también conocido como "enter").       |
+| \ n                | Nueva línea.                                            |
+| \ f                | Un salto de página.                                     |
+| \ d                | Un dígito del 0 al 9.                                   |
+| \ D                | Cualquier caracter que **NO** sea un dígito del 0 al 9. |
+| \ w                | Cualquier caracter  alfanúmerico.                       |
+| \ W                | Cualquier caracter que **NO** sea alfanúmerico.         |
+| \ s                | Un espacio en blanco.                                   |
+| \ S                | Cualquier caracter que **NO** sea un espacio en blanco. |
+| \ A                | Inicio de cadena (No es un caracter sino una posición). |
+| \ Z                | Final de cadena (No es un caracter sino una posición).  |
 
-ATENCIÓN, la herramienta que usaremos (grep y sus derivados, egrep, fgrep) no soporta los metacaracteres de la tabla de arriba, por lo cual no es recomendable usarlos, empero, es posible usarlos a través de la bandera **-p** que le indica a *grep* que estamos accediendo al soporte del *Perl* (un lenguaje de programación). La sintaxis para lo anterior sería:
+Atención, la herramienta (grep y sus derivados, egrep, fgrep) no soporta los metacaracteres de la tabla de arriba, por lo cual no es recomendable usarlos, empero, es posible usarlos a través de la bandera **-p** que le indica a *grep* que estamos accediendo al soporte del *Perl* (un lenguaje de programación). La sintaxis para lo anterior sería:
 
 `grep -P '\d' archivo1`
 
@@ -49,7 +49,6 @@ ATENCIÓN, la herramienta que usaremos (grep y sus derivados, egrep, fgrep) no s
 | gre \| egrep       | "GNU"                                   | archivo1                                 |
 
 
-​	
 
 ## Patrones simples
 
@@ -163,9 +162,6 @@ Ejemplo
 
 `egrep 'abc{2}' texto `
 
-### \\< Indica el comienzo de una palabra.
-
-### \\> Indica el final de una palabra.
 
 ## Más ejemplos
 
@@ -196,20 +192,6 @@ Ejemplo
 `egrep '[0-9]{2}[-/*][0-9][0-9][-/*][0-9]{4}' texto2`
 
 `egrep '[0-9]{2}[-/*][0-9][0-9][^a-zA-Z0-9][0-9]{4}' texto2`
-
-## Ejercicios en clase
-
-#### 1. Mostrar todas las carpetas ocultas de su carpeta de usuarios
-
-`ls -a | egrep '^\..*'`
-
-#### 2. Mostrar las carpetas ocultas del directorio del usuario que tengan la palabra conf
-
-`ls -a | egrep '^\..*conf*'`
-
-#### 3. Encontrar todos los directorios que terminen en vocal
-
-`ls -a | egrep '.*[aeiou]$'`
 
 ### Concatenando filtros
 
