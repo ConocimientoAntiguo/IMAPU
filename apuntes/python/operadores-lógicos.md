@@ -1,4 +1,4 @@
-# Operadores lógicos. 
+# Operadores lógicos
 
 Los operadores lógicos son los que trabajan con valores booleanos, nos devuelven falso o verdadero y son la escencia de las condiciones. 
 
